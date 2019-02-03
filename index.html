@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+
+<html lang="en-us">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Train Today!</title>
+
+    <!-- Bootstrap -->
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+    />
+    <!-- LINK TO FIREBASE GOES HERE -->
+    <script src="https://www.gstatic.com/firebasejs/5.8.1/firebase.js"></script>
+    
+    
+  </head>
+
+  <body>
+    <div class="container">
+      <!-- Jumbotron -->
+      <div class="jumbotron"><h1 class="text-center">Train Today!</h1></div>
+      <div>
+        <div class="panel panel-default">
+          <div class="panel-heading">
+            <h1 class="panel-title">Add Train</h1>
+          </div>
+          <div class="panel-body form-group">
+            <form>
+              <label for="TrainInput">Train Name</label> <br />
+              <input
+                type="text"
+                class="form-control"
+                name="trName"
+                id="TrainInput"
+                aria-describedby="TrainFormHelp"
+                placeholder="Greyhound"
+                required
+              />
+              <label for="DestinyInput">Destination</label> <br />
+              <input
+                type="text"
+                class="form-control"
+                name="trDest"
+                id="destinyInput"
+                placeholder="Jersey city, NJ"
+                required
+              />
+              <br />
+              <label for="dtimeInput">First time train</label> <br />
+              <input
+                type="time"
+                class="form-control"
+                name="trTime"
+                id="dtimeInput"
+                
+                required
+              />
+              <br />
+              <label for="frequencyInput">Frequency</label> <br />
+              <input
+                type="number"
+                class="form-control"
+                name="trTime"
+                id="frequencyInput"
+            
+                required
+              />
+              <br />
+              <button class="btn btn-default" id="add-user" type="submit">Submit</button>
+              
+            </form>
+            
+              
+
+        <!-- Most Recent Member Card -->
+        <div class="col-lg-6">
+          <div class="card">
+            <div class="card-header">train Schedule</div>
+            <div class="card-body" id="recent-member">
+              <h2 id="TrainInput-display"></h2>
+              <h4 id="destinyInput-display"></h4>
+              <h4 id="dtimeInput-display"></h4>
+              <p id="frequencyInput-display"></p>
+            </div>
+          </div>
+        </div>
+    </div>
+
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/locale/et.js"></script>
+    <script src="main.js></script>
+    <!-- Script -->
+   
+  </body>
+</html>
